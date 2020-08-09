@@ -1,5 +1,5 @@
 # rajas2716 -- Covid cases Predictor(day wise)
-This is the initiated README for team rajas2716, Please edit this as you build your project
+![Project-Image](https://drive.google.com/file/d/1Zcw4HrG1FDk83zp2sJODmXCIL1hLswys/view?usp=sharing)
 
 ## Including datasets that are going to be used by this machine learning program
 covid.csv link : https://github.com/imdevskp/covid-19-india-data
