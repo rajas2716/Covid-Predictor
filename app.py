@@ -17,17 +17,18 @@ def home():
 @app.route('/predict',methods =['POST'])
 def predict():
     option = request.form['options']
-    if(option=="LR"):
-        date = request.form['date']
-        dat = date
-        name = request.form['name']
-        d = dt.strptime(date, '%d-%m-%Y').date()
-        date = d.toordinal()
-        date = np.array(date)
-        date = date.reshape(-1,1)
-        prediction = model.predict(date)
-        output = int(prediction)
-        return render_template('index.html' , pred = "{}".format(output) , name="{}".format(name), model="{}".format(option), date = "{}".format(dat))
+    date = request.form['date']
+    dat = date
+    name = request.form['name']
+    d = dt.strptime(date, '%d-%m-%Y').date()
+    date = d.toordinal()
+    date = np.array(date)
+    date = date.reshape(-1,1)
+    prediction = model.predict(date)
+    output = int(prediction)
+    if(output<0):
+        output =0
+    return render_template('index.html' , pred = "{}".format(output) , name="{}".format(name), model="{}".format(option), date = "{}".format(dat))
 
 if __name__=="__main__":
     app.run(debug=True)
