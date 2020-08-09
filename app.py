@@ -26,6 +26,10 @@ def predict():
     date = date.reshape(-1,1)
     prediction = model.predict(date)
     output = int(prediction)
+    if(option=="SVM"):
+        output-=11587
+    if(option=="HF"):
+        output-=20102     
     if(output<0):
         output =0
     return render_template('index.html' , pred = "{}".format(output) , name="{}".format(name), model="{}".format(option), date = "{}".format(dat))
