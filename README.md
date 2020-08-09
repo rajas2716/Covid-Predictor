@@ -1,5 +1,5 @@
 # rajas2716 -- Covid cases Predictor(day wise)
-![Project-Image](https://o.remove.bg/downloads/68464b84-86aa-4b1b-ac82-183352ba89b8/Project_Image-removebg-preview.png)
+![Project-Image](https://github.com/rajas2716/Heroku-App/blob/master/Project_Image.png)
 
 ## Including datasets that are going to be used by this machine learning program
 covid.csv link : https://github.com/imdevskp/covid-19-india-data
