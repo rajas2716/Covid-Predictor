@@ -1,4 +1,4 @@
-# rajas2716
+# rajas2716 -- Covid cases Predictor(day wise)
 This is the initiated README for team rajas2716, Please edit this as you build your project
 
 ## Including datasets that are going to be used by this machine learning program
@@ -14,6 +14,10 @@ Daily_cases_INDIA link : https://github.com/owid/covid-19-data/tree/master/publi
 ## How to launch a localhost
 
 Step 1: Clone the repo and cd into directory
+
 Step 2: Run model.py
+
 Step 3: Run app.py
+
 Step 4: Run the IP address in browser
+
