@@ -30,3 +30,6 @@ y_train = np.array(y_train).reshape(-1,1)
 model = LinearRegression()
 model.fit(X_train,y_train)
 print(model.predict([[737491]]))
+
+#Creating pickle file
+pickle.dump(model,open('model.pkl','wb'))
